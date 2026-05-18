@@ -1,0 +1,359 @@
+// --------------Шапка----------------
+
+.header {
+   background-color: var(--color-text-main);
+   color: var(--color-white);
+
+   // .header__container
+
+   &__container {
+      display: flex;
+      flex-direction: column;
+   }
+
+   // .header__separator
+
+   &__separator {
+      width: 100%;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.2);
+   }
+
+   // .header__top
+
+   &__top {
+      padding: 14px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   // .header__logo
+
+   &__logo {
+      max-width: 307px;
+      max-height: 42px;
+      padding-right: 145px;
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+
+   // .header__phone
+
+   &__phone {
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      a {
+         display: inline-block;
+         color: var(--color-white);
+         font-size: 0.9375rem;
+         font-weight: 500;
+      }
+   }
+
+   // .header__phone-icon
+
+   &__phone-icon {
+      width: 18px;
+      height: 24px;
+      svg {
+         height: 100%;
+         width: 100%;
+         fill: var(--color-white);
+      }
+   }
+
+   // .header__info
+
+   &__info {
+      display: flex;
+      gap: 10px;
+   }
+
+   // .header__info-text
+
+   &__info-text {
+      display: flex;
+      flex-direction: column;
+      span {
+         font-size: 0.8125rem;
+         line-height: 100%;
+      }
+      span + span {
+         font-size: 12px;
+      }
+   }
+
+   // .header__info-icon
+
+   &__info-icon {
+      max-width: 17px;
+      max-height: 27px;
+      svg {
+         width: 100%;
+         height: 100%;
+         fill: var(--color-white);
+      }
+   }
+
+   // .header__nav
+
+   &__nav {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 500;
+      padding: 0.625rem 0;
+   }
+}
+
+// --------------Шапка навигация моделей----------------
+
+.model-nav {
+   font-size: 0.666rem;
+   // .model-nav__list
+
+   &__list {
+      display: flex;
+      gap: 13px;
+   }
+
+   // .model-nav__item
+
+   &__item {
+      transition: all 0.8s ease;
+   }
+   &__item:hover {
+   }
+
+   // .model-nav__link
+
+   &__link {
+      color: var(--color-white);
+   }
+}
+// --------------Шапка навигация действий----------------
+
+.actions-nav {
+   font-size: 0.6875rem;
+
+   // .actions-nav__list
+
+   &__list {
+      display: flex;
+      gap: 13px;
+   }
+
+   // .actions-nav__item
+
+   &__item {
+   }
+
+   // .actions-nav__link
+
+   &__link {
+      color: var(--color-white);
+   }
+}
+
+.model-nav__link,
+.actions-nav__link {
+   position: relative;
+}
+
+.model-nav__link::after,
+.actions-nav__link::after {
+   content: "";
+
+   position: absolute;
+   left: 0;
+   bottom: -4px;
+
+   width: 0;
+   height: 1px;
+
+   background-color: currentColor;
+
+   transition: width 0.3s ease;
+}
+
+.model-nav__link:hover::after,
+.actions-nav__link:hover::after {
+   width: 100%;
+}
+
+// ---------- Шапка адаптив -----------------
+
+.burger {
+   display: none;
+
+   width: 40px;
+   height: 40px;
+
+   padding: 0;
+
+   background: transparent;
+   border: none;
+
+   cursor: pointer;
+
+   position: relative;
+   z-index: 1001;
+
+   span {
+      display: block;
+      width: 100%;
+      height: 3px;
+
+      background-color: var(--color-white);
+
+      border-radius: 10px;
+
+      transition: 0.3s ease;
+   }
+
+   span + span {
+      margin-top: 7px;
+   }
+}
+
+@media (max-width: 992px) {
+   .header {
+      position: relative;
+
+      &__top {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+
+         gap: 1rem;
+
+         padding: 10px 0;
+      }
+
+      &__logo {
+         padding-right: 0;
+         margin-right: auto;
+
+         max-width: 150px;
+         height: 40px;
+         width: 100%;
+
+         img {
+            width: 100%;
+            height: auto;
+            display: block;
+         }
+      }
+
+      &__phone,
+      &__info {
+         display: none;
+      }
+
+      &__nav {
+         position: absolute;
+
+         top: 100%;
+         left: 0;
+
+         width: 100%;
+
+         padding: 2rem 1rem;
+
+         background-color: var(--color-text-main);
+
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+
+         gap: 2rem;
+
+         opacity: 0;
+         visibility: hidden;
+
+         transform: translateY(-10px);
+
+         transition:
+            opacity 0.3s ease,
+            visibility 0.3s ease,
+            transform 0.3s ease;
+
+         z-index: 1000;
+      }
+
+      &__nav.active {
+         opacity: 1;
+         visibility: visible;
+         transform: translateY(0);
+      }
+   }
+
+   .burger {
+      display: block;
+
+      width: 30px;
+      height: 40px;
+
+      flex-shrink: 0;
+
+      padding: 0;
+
+      background: transparent;
+      border: none;
+
+      cursor: pointer;
+
+      position: relative;
+      z-index: 1001;
+
+      span {
+         display: block;
+         width: 100%;
+         height: 3px;
+
+         background-color: var(--color-white);
+
+         border-radius: 10px;
+
+         transition: 0.3s ease;
+      }
+
+      span + span {
+         margin-top: 7px;
+      }
+   }
+
+   .burger.active span:nth-child(1) {
+      transform: translateY(10px) rotate(45deg);
+   }
+
+   .burger.active span:nth-child(2) {
+      opacity: 0;
+   }
+
+   .burger.active span:nth-child(3) {
+      transform: translateY(-10px) rotate(-45deg);
+   }
+
+   .model-nav__list,
+   .actions-nav__list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      gap: 1rem;
+   }
+
+   .model-nav__link,
+   .actions-nav__link {
+      font-size: 1rem;
+   }
+
+   body.lock {
+      overflow: hidden;
+   }
+}

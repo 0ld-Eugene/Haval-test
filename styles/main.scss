@@ -1,0 +1,31 @@
+// main.scss
+
+// 1. Хелперы и настройки (сначала то, что не генерирует CSS, а дает инструменты)
+@use "helpers/normalize";
+@use "helpers/index" as h;
+// @use "helpers/variables" as v;
+// @use "helpers/functions" as f;
+// @use "helpers/mixins" as m;
+
+// 2. Глобальные стили (теги, сброс, базовые шрифты)
+@use "helpers/globals";
+
+// 3. Блоки
+@use "blocks/header";
+@use "blocks/hero";
+@use "blocks/promo";
+@use "blocks/timer";
+@use "blocks/models";
+@use "blocks/slider";
+@use "blocks/popup";
+@use "blocks/footer";
+
+// Брейкпоинты
+
+// 576px — большие смартфоны (начало горизонтальных изменений)
+
+// 768px — планшеты
+
+// 992px — небольшие десктопы
+
+// 1200px — полный широкий экран

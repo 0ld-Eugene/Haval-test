@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Gulp temporary files
+dist/
+build/
+.sass-cache/
+
+# System files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Other files
+notes.md
+check.md

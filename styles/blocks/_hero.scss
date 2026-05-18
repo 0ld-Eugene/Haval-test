@@ -90,23 +90,27 @@
 
 @media (max-width: 992px) {
    .hero {
-      padding-top: 32px;
-      padding-bottom: 300px;
+      padding-top: 2rem;
+      padding-bottom: 18.75rem;
    }
+
    .hero__container {
-      gap: 16px;
+      gap: 1rem;
    }
+
    .hero__title {
-      padding: 10px 0;
-      font-size: 32px;
+      padding: 0.625rem 0;
+      font-size: 2rem;
    }
+
    .hero__btn {
-      padding: 10px 12px;
+      padding: 0.625rem 0.75rem;
    }
 }
+
 @media (max-width: 576px) {
    .hero__title {
-      font-size: 24px;
+      font-size: 1.5rem;
       line-height: 1.4;
    }
 }

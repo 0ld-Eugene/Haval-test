@@ -241,65 +241,80 @@
       // flex-direction: column;
       // justify-content: center;
       // align-items: center;
-      gap: 10px;
+      gap: 0.625rem;
    }
+
    .models__slider {
    }
+
    .swiper-card-wrapper {
-      max-width: 400px;
+      max-width: 25rem;
    }
 
    .swiper-card {
-      padding: 20px;
+      padding: 1.25rem;
    }
+
    .swiper-card__badge {
-      right: 30px;
-      width: 145px;
-      height: 32px;
+      right: 1.875rem;
+      width: 9.0625rem;
+      height: 2rem;
       line-height: 1;
    }
 
    .swiper-card__header {
-      padding-top: 10px;
-      padding-left: 20px;
+      padding-top: 0.625rem;
+      padding-left: 1.25rem;
    }
+
    .swiper-card__title {
-      font-size: 16px;
+      font-size: 1rem;
    }
+
    .swiper-card__profit {
-      font-size: 14px;
+      font-size: 0.875rem;
    }
+
    .swiper-card__testdrive-btn {
-      top: 10px;
-      right: 0px;
+      top: 0.625rem;
+      right: 0rem;
    }
+
    .swiper-card__testdrive-btn svg {
       display: none;
    }
+
    .swiper-card__img {
-      max-height: 180px;
+      max-height: 11.25rem;
    }
+
    .swiper-card__benefits {
       justify-content: space-between;
    }
+
    .swiper-card__benefit {
-      gap: 5px;
+      gap: 0.3125rem;
    }
+
    .swiper-card__benefit-icon {
-      width: 24px;
-      height: 24px;
+      width: 1.5rem;
+      height: 1.5rem;
    }
+
    .swiper-card__benefit-text {
       line-height: 1;
    }
+
    .swiper-card__button {
-      padding: 16px 0;
+      padding: 1rem 0;
    }
 }
+
 @media (max-width: 768px) {
    .models {
-      padding-top: 20px;
+      padding-top: 1.25rem;
    }
+
    .models__container {
       flex-direction: column;
       align-items: center;

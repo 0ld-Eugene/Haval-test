@@ -516,19 +516,19 @@ button {
 }
 .header__separator {
   width: 100%;
-  height: 1px;
+  height: 0.0625rem;
   background-color: rgba(255, 255, 255, 0.2);
 }
 .header__top {
-  padding: 14px 0;
+  padding: 0.875rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .header__logo {
-  max-width: 307px;
-  max-height: 42px;
-  padding-right: 145px;
+  max-width: 19.1875rem;
+  max-height: 2.625rem;
+  padding-right: 9.0625rem;
 }
 .header__logo img {
   width: 100%;
@@ -547,8 +547,8 @@ button {
   font-weight: 500;
 }
 .header__phone-icon {
-  width: 18px;
-  height: 24px;
+  width: 1.125rem;
+  height: 1.5rem;
 }
 .header__phone-icon svg {
   height: 100%;
@@ -557,7 +557,7 @@ button {
 }
 .header__info {
   display: flex;
-  gap: 10px;
+  gap: 0.625rem;
 }
 .header__info-text {
   display: flex;
@@ -568,11 +568,11 @@ button {
   line-height: 100%;
 }
 .header__info-text span + span {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .header__info-icon {
-  max-width: 17px;
-  max-height: 27px;
+  max-width: 1.0625rem;
+  max-height: 1.6875rem;
 }
 .header__info-icon svg {
   width: 100%;
@@ -591,7 +591,7 @@ button {
 }
 .model-nav__list {
   display: flex;
-  gap: 13px;
+  gap: 0.8125rem;
 }
 .model-nav__item {
   transition: all 0.8s ease;
@@ -605,7 +605,7 @@ button {
 }
 .actions-nav__list {
   display: flex;
-  gap: 13px;
+  gap: 0.8125rem;
 }
 .actions-nav__link {
   color: var(--color-white);
@@ -621,9 +621,9 @@ button {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -4px;
+  bottom: -0.25rem;
   width: 0;
-  height: 1px;
+  height: 0.0625rem;
   background-color: currentColor;
   transition: width 0.3s ease;
 }
@@ -635,8 +635,8 @@ button {
 
 .burger {
   display: none;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   padding: 0;
   background: transparent;
   border: none;
@@ -647,13 +647,13 @@ button {
 .burger span {
   display: block;
   width: 100%;
-  height: 3px;
+  height: 0.1875rem;
   background-color: var(--color-white);
-  border-radius: 10px;
+  border-radius: 0.625rem;
   transition: 0.3s ease;
 }
 .burger span + span {
-  margin-top: 7px;
+  margin-top: 0.4375rem;
 }
 
 @media (max-width: 992px) {
@@ -665,13 +665,13 @@ button {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    padding: 10px 0;
+    padding: 0.625rem 0;
   }
   .header__logo {
     padding-right: 0;
     margin-right: auto;
-    max-width: 150px;
-    height: 40px;
+    max-width: 9.375rem;
+    height: 2.5rem;
     width: 100%;
   }
   .header__logo img {
@@ -695,7 +695,7 @@ button {
     gap: 2rem;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-10px);
+    transform: translateY(-0.625rem);
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
     z-index: 1000;
   }
@@ -706,8 +706,8 @@ button {
   }
   .burger {
     display: block;
-    width: 30px;
-    height: 40px;
+    width: 1.875rem;
+    height: 2.5rem;
     flex-shrink: 0;
     padding: 0;
     background: transparent;
@@ -719,22 +719,22 @@ button {
   .burger span {
     display: block;
     width: 100%;
-    height: 3px;
+    height: 0.1875rem;
     background-color: var(--color-white);
-    border-radius: 10px;
+    border-radius: 0.625rem;
     transition: 0.3s ease;
   }
   .burger span + span {
-    margin-top: 7px;
+    margin-top: 0.4375rem;
   }
   .burger.active span:nth-child(1) {
-    transform: translateY(10px) rotate(45deg);
+    transform: translateY(0.625rem) rotate(45deg);
   }
   .burger.active span:nth-child(2) {
     opacity: 0;
   }
   .burger.active span:nth-child(3) {
-    transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-0.625rem) rotate(-45deg);
   }
   .model-nav__list,
   .actions-nav__list {
@@ -815,23 +815,23 @@ button {
 
 @media (max-width: 992px) {
   .hero {
-    padding-top: 32px;
-    padding-bottom: 300px;
+    padding-top: 2rem;
+    padding-bottom: 18.75rem;
   }
   .hero__container {
-    gap: 16px;
+    gap: 1rem;
   }
   .hero__title {
-    padding: 10px 0;
-    font-size: 32px;
+    padding: 0.625rem 0;
+    font-size: 2rem;
   }
   .hero__btn {
-    padding: 10px 12px;
+    padding: 0.625rem 0.75rem;
   }
 }
 @media (max-width: 576px) {
   .hero__title {
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.4;
   }
 }
@@ -851,20 +851,20 @@ button {
 }
 .promo__left {
   justify-content: flex-end;
-  padding-right: 10px;
+  padding-right: 0.625rem;
 }
 .promo__right {
-  padding-left: 103px;
+  padding-left: 6.4375rem;
 }
 .promo__heading {
-  padding-right: 6px;
-  padding-bottom: 3px;
+  padding-right: 0.375rem;
+  padding-bottom: 0.1875rem;
   text-align: right;
   text-transform: uppercase;
 }
 .promo__btn {
-  padding: 25px 69px;
-  margin-top: 32px;
+  padding: 1.5625rem 4.3125rem;
+  margin-top: 2rem;
   vertical-align: middle;
   align-items: center;
   cursor: pointer;
@@ -883,27 +883,27 @@ button {
   transform: skewX(-20deg);
 }
 .promo__btn:hover {
-  transform: translateY(-3px);
+  transform: translateY(-0.1875rem);
 }
 .promo__btn:hover::before {
   left: 130%;
   transition: left 0.8s ease;
 }
 .promo__chat {
-  width: 70px;
-  height: 70px;
+  width: 4.375rem;
+  height: 4.375rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--color-black-rgba);
   position: sticky;
-  left: 48px;
-  bottom: 10px;
+  left: 3rem;
+  bottom: 0.625rem;
 }
 .promo__chat-btn {
-  width: 56px;
-  height: 56px;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -918,37 +918,49 @@ button {
 @media (max-width: 992px) {
   .promo__heading {
     line-height: 1.2;
-    max-width: 500px;
+    max-width: 31.25rem;
     text-align: center;
   }
   .promo__btn {
-    padding: 14px 0;
-    max-width: 330px;
+    padding: 0.875rem 0;
+    max-width: 20.625rem;
   }
 }
 @media (max-width: 576px) {
   .promo {
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding-top: 1.5625rem;
+    padding-bottom: 1.25rem;
   }
-  .promo__heading {
-    font-size: 14px;
+  .promo__container {
+    flex-direction: column;
   }
   .promo__right {
-    padding-left: 30px;
+    padding-left: 0;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+  .promo__right,
+  .promo__left {
+    width: 100%;
+  }
+  .promo__heading {
+    font-size: 0.875rem;
+    max-width: 100%;
+    padding-right: 0;
   }
   .promo__btn {
-    padding: 10px 0;
+    padding: 0.9375rem;
   }
   .promo__chat {
-    width: 38px;
-    height: 38px;
-    left: 30px;
-    bottom: 30px;
+    width: 2.375rem;
+    height: 2.375rem;
+    left: 1.875rem;
+    bottom: 1.875rem;
   }
   .promo__chat-btn {
-    width: 28px;
-    height: 28px;
+    width: 1.75rem;
+    height: 1.75rem;
   }
 }
 .models {
@@ -1108,60 +1120,60 @@ button {
 
 @media (max-width: 992px) {
   .models__container {
-    gap: 10px;
+    gap: 0.625rem;
   }
   .swiper-card-wrapper {
-    max-width: 400px;
+    max-width: 25rem;
   }
   .swiper-card {
-    padding: 20px;
+    padding: 1.25rem;
   }
   .swiper-card__badge {
-    right: 30px;
-    width: 145px;
-    height: 32px;
+    right: 1.875rem;
+    width: 9.0625rem;
+    height: 2rem;
     line-height: 1;
   }
   .swiper-card__header {
-    padding-top: 10px;
-    padding-left: 20px;
+    padding-top: 0.625rem;
+    padding-left: 1.25rem;
   }
   .swiper-card__title {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .swiper-card__profit {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .swiper-card__testdrive-btn {
-    top: 10px;
-    right: 0px;
+    top: 0.625rem;
+    right: 0rem;
   }
   .swiper-card__testdrive-btn svg {
     display: none;
   }
   .swiper-card__img {
-    max-height: 180px;
+    max-height: 11.25rem;
   }
   .swiper-card__benefits {
     justify-content: space-between;
   }
   .swiper-card__benefit {
-    gap: 5px;
+    gap: 0.3125rem;
   }
   .swiper-card__benefit-icon {
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
   }
   .swiper-card__benefit-text {
     line-height: 1;
   }
   .swiper-card__button {
-    padding: 16px 0;
+    padding: 1rem 0;
   }
 }
 @media (max-width: 768px) {
   .models {
-    padding-top: 20px;
+    padding-top: 1.25rem;
   }
   .models__container {
     flex-direction: column;
@@ -1171,12 +1183,12 @@ button {
 .swiper-card__pagination {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .swiper-pagination-bullet {
-  width: 28px;
-  height: 28px;
+  width: 1.75rem;
+  height: 1.75rem;
   border-radius: 50%;
   background-color: #d9d9d9;
   opacity: 1;
@@ -1185,8 +1197,8 @@ button {
 
 .swiper-pagination-bullet-active {
   transform: scale(1.1);
-  border: 3px solid var(--color-white);
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+  border: 0.1875rem solid var(--color-white);
+  box-shadow: 0 0 0.125rem 0.125rem rgba(0, 0, 0, 0.2);
 }
 
 .popup {

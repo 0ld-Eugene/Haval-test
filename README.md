@@ -1,20 +1,49 @@
-# Bitroid Test Task
+# Haval Landing Page
 
-This is a test task for a frontend developer position. The project focuses on clean architecture, BEM methodology, and modular SCSS structure.
+Тестовое задание на вакансию HTML-верстальщика.
 
-## Tech Stack
-* **HTML5** (Semantic markup)
-* **SCSS** (Modular architecture with Gulp)
-* **JavaScript** (jQuery included)
-* **Gulp** (Task runner)
+## Что реализовано
 
-## Project Structure
-* `styles/`: SCSS source files (blocks, helpers, main.scss)
-* `css/`: Compiled CSS
-* `js/`: Scripts
-* `components/`: Header and Footer partials
+- Адаптивная верстка
+- Семантический HTML5
+- SCSS
+- БЭМ-нейминг
+- Оптимизация изображений (`avif`, `webp`, fallback`)
+- Responsive background-image через `image-set()`
+- SVG sprite
+- Анимации и hover-эффекты
+- Бургер-меню для мобильных устройств
+- Popup-форма через Fancybox
+- Слайдеры на Swiper.js
+- Таймер
+- Кроссбраузерная верстка
+- Адаптация под мобильные устройства и планшеты
 
-## How to run
-1. Clone this repository: `git clone <url>`
-2. Install dependencies: `npm install`
-3. Run project: `npm run watch`
+## Используемые технологии
+
+- HTML5
+- CSS (SCSS для удобства)
+- JavaScript
+- Swiper.js
+- Fancybox 3
+- Gulp (для компиляции в css, watching, минификация изображений и создание avif/webp)
+
+## Особенности проекта
+
+- Внутренние слайдеры цветов автомобилей
+- Кастомная пагинация Swiper
+- Адаптивная навигация
+- Интерактивные карточки автомобилей
+- Lazy loading изображений
+- Оптимизированная структура проекта
+
+## Структура проекта
+
+```bash
+css/ (сжатый css)
+fonts/ 
+images/
+icons/
+scss/
+js/
+index.html
